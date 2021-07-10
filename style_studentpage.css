@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    font-size : 10px;
+    font-family: 'Noto Serif KR', serif;
+}
+html{
+    width : 100vw;
+    max-width : 100%;
+}
+body{
+    background : black;
+    color : #cccccc;
+    max-width : 1920px;
+
+    /* scrollbar_delete */
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display :none;
+}
+/* 상단메뉴 */
+.toptitle{
+    display : flex;
+    justify-content : space-between;
+    margin : 0 18.5vw;
+    align-items : center;
+    margin-top : 8rem;
+}
+#title_text{
+    text-decoration : none;
+    color : #cccccc;
+    font-size : 3.6rem;
+    font-weight: 400;
+}
+h2{
+    font-size : 2rem;
+    font-weight: 400;
+}
+.topmenu{
+    list-style : none;
+    display : flex;
+    flex-direction : row;
+}
+.topmenu_a{
+    text-decoration : none;
+    color : #707070;
+}
+.topmenu_list{
+    margin-right : 60px;
+}
+.topmenu .topmenu_list:nth-child(4){
+    margin-right : 0;
+}
+
+.topmenu_a:hover{
+    color : #cccccc;
+    transition : 0.5s;
+}
+
+/* container_categoryAndSearchbar */
+.cont_categoryANDsearch{
+    display : flex;
+    justify-content : space-between;
+    margin : 21rem 18.5vw 0;
+}
+.major_button{
+    cursor : pointer;
+    background : black;
+    color : #707070;
+    font-size : 2rem;
+    border : none;
+}
+#category_all{
+    margin-right : 3rem;
+}
+#category_communication{
+    margin-right : 3rem;
+}
+
+.major_divide .major_button:nth-child(1){
+    color : #cccccc;
+}
+
+.major_button:hover{
+    color : #cccccc;
+    transition : 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#searchbar_input{
+    cursor : pointer;
+    background : black;
+    color : #cccccc;
+    font-size : 1.6rem;
+    border : none;
+    border-bottom : 1px white solid;
+}
+#searchbar_input:focus{
+    outline : none;
+}
+
+/* photo_container */
+.cont_photo{
+    margin : 9.6rem 18.5vw 0;
+    display : flex;
+    flex-wrap : wrap;
+    gap : 4rem;
+}
+.photo_name{
+    display : flex;
+    flex-direction : column;
+    margin-bottom : 12rem;
+}
+.photoText{
+    text-align : center;
+    font-size : 2rem;
+}
+.img_photo{
+    width : 27rem;
+    height : 27rem;
+    margin-bottom : 3rem;
+}
+
+.img_photo:hover{
+    opacity : 0.4;
+    transition : 0.5s;
+}
+
+
+/* display_none/block */
+#cont_photo_all{
+    display : flex;
+}
+#cont_photo_communi{
+    display : none;
+}
+#cont_photo_motion{
+    display : none;
+}
+
+a{
+    color : #cccccc;
+    text-decoration: none;
+}
+
+/* woosong_address */
+
+.cont_address{
+    margin-top : 14.5vw;
+    margin-bottom : 7vw;
+    text-align : center;
+}
+.address_woosong{
+    font-size : 1.3rem;
+    color : #707070;
+}
+
+b{
+    font-size : 3.6rem;
+}
+
+
+
+
+
+#topmenu_a_white{
+    color : white;
+    font-weight : 700;
+}
+
+
+
+
+
+
+
+/* mobile전용 */
+.toptitle_mobile{
+    display : none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 450px){
+
+    *{
+        margin : 0;
+        padding : 0;
+    }
+
+    b{
+        font-size : 2rem;
+    }
+    #topmenu_a_white_m{
+        color : white;
+        font-weight : 700;
+    }
+
+    .toptitle{
+        display : none;
+    }
+    .toptitle_mobile{
+        width : 100vw;
+        position : relative;
+        display : block;
+    }
+    h2{
+        font-size : 1.4rem;
+    }
+
+    /* issue */
+    .topmenu_mobile_list_all{
+        position : absolute;
+        visibility : hidden;
+        opacity : 0;
+        transition : 0.5s;
+        left : 0;
+        right : 0;
+    }
+
+    #menu_button{
+        position : absolute;
+        background : transparent;
+        border : none;
+        margin-left : 4.8vw;
+    }
+    .toptitle_title_mobile{
+        text-align : center;
+        font-size : 2rem;
+    }
+    .title_mobile_center{
+        margin-top : 20px;
+        margin-bottom : 20px;
+    }
+    .topmenu_mobile_list{
+        list-style: none;
+        display : flex;
+        justify-content: space-between;
+        font-size : 1.4rem;
+        margin-left : 4.8vw;
+        margin-right : 4.8vw;
+        margin-top : 2rem;
+        font-weight : 400;
+    }
+    .topmenu_list{
+        margin : 0;
+    }
+
+    #search_button{
+        position : absolute;
+        background : transparent;
+        border : none;
+        margin-right : 4.8vw;
+        right : 0;
+    }
+
+
+
+
+
+
+    /* container_categoryAndSearchbar */
+    .cont_categoryANDsearch{
+        margin-left : 4.8vw;
+        margin-right : 4.8vw;
+        margin-top : 3.5rem;
+        transition : 0.5s;
+
+        display : block;
+    }
+    .major_button{
+        cursor : pointer;
+        background : black;
+        color : #707070;
+        font-size : 1.2rem;
+        border : none;
+    }
+    #category_all{
+        margin-right : 3rem;
+    }
+    #category_communication{
+        margin-right : 3rem;
+    }
+    
+    .major_divide .major_button:nth-child(1){
+        color : #cccccc;
+    }
+
+    #searchbar_input{
+        cursor : pointer;
+        background : black;
+        color : #cccccc;
+        font-size : 1.6rem;
+        border : none;
+        border-bottom : 1px white solid;
+
+        display : none;
+
+    }
+    #searchbar_input:focus{
+        outline : none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* photo_container */
+    .cont_photo{
+        margin-top : 3rem;
+        margin-left : 4.8vw;
+        margin-right : 4.8vw;
+        display : flex;
+        flex-wrap : wrap;
+        justify-content : space-between;
+    }
+    .photo_name{
+        display : flex;
+        flex-direction : column;
+        margin-bottom : 1rem;
+    }
+    .photoText{
+        text-align : center;
+        font-size : 1.2rem;
+    }
+    .img_photo{
+        width : 18.2rem;
+        height : 18.2rem;
+        margin-bottom : 1.5rem;
+    }
+
+    /* display_none/block */
+    #cont_photo_communi{
+        display : none;
+    }
+    #cont_photo_motion{
+        display : none;
+    }                                                               
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Address */
+    .cont_address{
+        margin-top : 14.5vw;
+        margin-bottom : 7vw;
+        text-align : center;
+        margin-right : 4.8vw;
+        margin-left : 4.8vw;
+    }
+    .address_woosong{
+        font-size : 0.9rem;
+    }
+
+}

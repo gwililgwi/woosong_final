@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_studentpage.css">
+    <script defer src="./studentpage_js.js"></script>
+    <title>졸업전시회 웹페이지</title>
+</head>
+<body>
+    <div class="toptitle">
+        <div class="title">
+            <h1><a href="./introducepage.html" id="title_text">현상의 <b>현상</b></a></h1>
+        </div>
+        <div class="topmenu">
+            <li class="topmenu_list"><a href="./index.html" class="topmenu_a"><h2>메인</h2></a></li>
+            <li class="topmenu_list"><a href="./introducepage.html" class="topmenu_a"><h2>전시회소개</h2></a></li>
+            <li class="topmenu_list"><a href="./pdfpage.html" class="topmenu_a"><h2>전시도록</h2></a></li>
+            <li class="topmenu_list"><a href="./studentpage.html" class="topmenu_a" id="topmenu_a_white"><h2>작품전</h2></a></li>
+        </div>
+    </div>
+
+
+
+
+    <!-- mobile -->
+    <div class="toptitle_mobile">
+        <div class="title_mobile_center">
+            <button id="menu_button" value="1"><img src="./icon/menu.png"></button>
+        </div>
+
+        <div class="title_mobile_center">
+            <button id="search_button" value="1"><img src="./icon/search.png"></button>
+        </div>
+
+        <div class="toptitle_title_mobile">
+            현상의 <b>현상</b>
+        </div>
+
+        <div class="topmenu_mobile_list_all">
+            <div class="topmenu_mobile_list">
+                <li class="topmenu_list"><a href="./index.html" class="topmenu_a"><h2>메인</h2></a></li>
+                <li class="topmenu_list"><a href="./introducepage.html" class="topmenu_a"><h2>전시회소개</h2></a></li>
+                <li class="topmenu_list"><a href="./pdfpage.html" class="topmenu_a"><h2>전시도록</h2></a></li>
+                <li class="topmenu_list"><a href="./studentpage.html" class="topmenu_a" id="topmenu_a_white_m"><h2>작품전</h2></a></li>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="cont_categoryANDsearch">
+        <div class="major_divide">
+            <button id="category_all" class="major_button" onclick="categoryclickA()">
+                All
+            </button>
+            <button id="category_communication" class="major_button" onclick="categoryclickC()">
+                Communication Design.
+            </button>
+            <button id="category_motion" class="major_button" onclick="categoryclickM()">
+                Motion Graphic.
+            </button>
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="디자이너의 이름을 검색하세요." id="searchbar_input" onkeyup="filter()">
+        </div>
+    </div>
+
+    <!-- photo_container -->
+    <div class="cont_photo" id="cont_photo_all">
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/양귀민.png" alt="강지혜" class="img_photo">
+                <div class="photoText">
+                    강지혜(Gang Ji Hye)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/고두진.png" alt="고두진" class="img_photo">
+                <div class="photoText">
+                    고두진(Go Doo Jin)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/고민주.png" alt="고민주" class="img_photo">
+                <div class="photoText">
+                    고민주(Go Min Joo)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김기언.png" alt="김기언" class="img_photo">
+                <div class="photoText">
+                    김기언(Kim Gi Eon)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김명호.png" alt="김명호" class="img_photo">
+                <div class="photoText">
+                    김명호(Kim Myung Ho)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김예지.png" alt="김예지" class="img_photo">
+                <div class="photoText">
+                    김예지(Kim Ye Ji)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김정은.png" alt="김정은" class="img_photo">
+                <div class="photoText">
+                    김정은(Kim Jung Eun)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김지인.png" alt="김지인" class="img_photo">
+                <div class="photoText">
+                    김지인(Kim Ji In)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/양귀민.png" alt="김하늘" class="img_photo">
+                <div class="photoText">
+                    김하늘(Kim Ha Neul)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/박상원.png" alt="박상원" class="img_photo">
+                <div class="photoText">
+                    박상원(Park Sang Won)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/박선주.png" alt="박선주" class="img_photo">
+                <div class="photoText">
+                    박선주(Park Sun Joo)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/박채빈.png" alt="박채빈" class="img_photo">
+                <div class="photoText">
+                    박채빈(Park Che Bin)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/성유림.png" alt="성유림" class="img_photo">
+                <div class="photoText">
+                    성유림(Sung Yu Rim)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/손다혜.png" alt="손다혜" class="img_photo">
+                <div class="photoText">
+                    손다혜(Son Da Hye)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/손인정.png" alt="손인정" class="img_photo">
+                <div class="photoText">
+                    손인정(Son In Jung)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/송현영.png" alt="송현영" class="img_photo">
+                <div class="photoText">
+                    송현영(Song Hyun Young)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/신예나.png" alt="신예나" class="img_photo">
+                <div class="photoText">
+                    신예나(Shin Ye Na)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/양귀민.png" alt="양귀민" class="img_photo">
+                <div class="photoText">
+                    양귀민(Yang Gwe Min)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/윤세아.png" alt="윤세아" class="img_photo">
+                <div class="photoText">
+                    윤세아(Yoon Se A)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이강현.png" alt="이강현" class="img_photo">
+                <div class="photoText">
+                    이강현(Lee Gang Hyun)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이길원.png" alt="이길원" class="img_photo">
+                <div class="photoText">
+                    이길원(Lee Gil Won)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이승연.png" alt="이승연" class="img_photo">
+                <div class="photoText">
+                    이승연(Lee Seung Yeon)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이영비.png" alt="이영비" class="img_photo">
+                <div class="photoText">
+                    이영비(Lee Young Be)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이은진.png" alt="이은진" class="img_photo">
+                <div class="photoText">
+                    이은진(Lee Eun Jin)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이정윤.png" alt="이정윤" class="img_photo">
+                <div class="photoText">
+                    이정윤(Lee Jung Yoon)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이준혁.png" alt="이준혁" class="img_photo">
+                <div class="photoText">
+                    이준혁(Lee Joon Hyuk)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/전예은.png" alt="전예은" class="img_photo">
+                <div class="photoText">
+                    전예은(Jeon Ye Eun)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/정가영.png" alt="정가영" class="img_photo">
+                <div class="photoText">
+                    정가영(Jung Ga Young)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/조동준.png" alt="조동준" class="img_photo">
+                <div class="photoText">
+                    조동준(Jo Dong Joon)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/조민주.png" alt="조민주" class="img_photo">
+                <div class="photoText">
+                    조민주(Jo Min Joo)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/조유정.png" alt="조유정" class="img_photo">
+                <div class="photoText">
+                    조유정(Jo Yoo Jung)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/양귀민.png" alt="최준혁" class="img_photo">
+                <div class="photoText">
+                    최준혁(Choi Jun Hyuk)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/최은아.png" alt="최은아" class="img_photo">
+                <div class="photoText">
+                    최은아(Choi Eun A)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/홍은빈.png" alt="홍은빈" class="img_photo">
+                <div class="photoText">
+                    홍은빈(Hong Eun Bin)
+                </div></a>
+        </div>
+    </div>
+
+    <!-- photo_container_communi -->
+    <div class="cont_photo" id="cont_photo_communi">
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/양귀민.png" alt="강지혜" class="img_photo">
+                <div class="photoText">
+                    강지혜(Gang Ji Hye)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/고두진.png" alt="고두진" class="img_photo">
+                <div class="photoText">
+                    고두진(Go Doo Jin)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/고민주.png" alt="고민주" class="img_photo">
+                <div class="photoText">
+                    고민주(Go Min Joo)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김기언.png" alt="김기언" class="img_photo">
+                <div class="photoText">
+                    김기언(Kim Gi Eon)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김명호.png" alt="김명호" class="img_photo">
+                <div class="photoText">
+                    김명호(Kim Myung Ho)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김예지.png" alt="김예지" class="img_photo">
+                <div class="photoText">
+                    김예지(Kim Ye Ji)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김정은.png" alt="김정은" class="img_photo">
+                <div class="photoText">
+                    김정은(Kim Jung Eun)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/김지인.png" alt="김지인" class="img_photo">
+                <div class="photoText">
+                    김지인(Kim Ji In)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/양귀민.png" alt="김하늘" class="img_photo">
+                <div class="photoText">
+                    김하늘(Kim Ha Neul)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/박선주.png" alt="박선주" class="img_photo">
+                <div class="photoText">
+                    박선주(Park Sun Joo)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/박채빈.png" alt="박채빈" class="img_photo">
+                <div class="photoText">
+                    박채빈(Park Che Bin)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/성유림.png" alt="성유림" class="img_photo">
+                <div class="photoText">
+                    성유림(Sung Yu Rim)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/손인정.png" alt="손인정" class="img_photo">
+                <div class="photoText">
+                    손인정(Son In Jung)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/양귀민.png" alt="양귀민" class="img_photo">
+                <div class="photoText">
+                    양귀민(Yang Gwe Min)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/윤세아.png" alt="윤세아" class="img_photo">
+                <div class="photoText">
+                    윤세아(Yoon Se A)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이강현.png" alt="이강현" class="img_photo">
+                <div class="photoText">
+                    이강현(Lee Gang Hyun)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이승연.png" alt="이승연" class="img_photo">
+                <div class="photoText">
+                    이승연(Lee Seung Yeon)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이은진.png" alt="이은진" class="img_photo">
+                <div class="photoText">
+                    이은진(Lee Eun Jin)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이정윤.png" alt="이정윤" class="img_photo">
+                <div class="photoText">
+                    이정윤(Lee Jung Yoon)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/전예은.png" alt="전예은" class="img_photo">
+                <div class="photoText">
+                    전예은(Jeon Ye Eun)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/정가영.png" alt="정가영" class="img_photo">
+                <div class="photoText">
+                    정가영(Jung Ga Young)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/조동준.png" alt="조동준" class="img_photo">
+                <div class="photoText">
+                    조동준(Jo Dong Joon)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/조민주.png" alt="조민주" class="img_photo">
+                <div class="photoText">
+                    조민주(Jo Min Joo)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/조유정.png" alt="조유정" class="img_photo">
+                <div class="photoText">
+                    조유정(Jo Yoo Jung)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/양귀민.png" alt="최준혁" class="img_photo">
+                <div class="photoText">
+                    최준혁(Choi Jun Hyuk)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/최은아.png" alt="최은아" class="img_photo">
+                <div class="photoText">
+                    최은아(Choi Eun A)
+                </div></a>
+        </div>
+
+    </div>
+
+    <!-- photo_container_motion -->
+    <div class="cont_photo" id="cont_photo_motion">
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/박상원.png" alt="박상원" class="img_photo">
+                <div class="photoText">
+                    박상원(Park Sang Won)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/손다혜.png" alt="손다혜" class="img_photo">
+                <div class="photoText">
+                    손다혜(Son Da Hye)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/송현영.png" alt="송현영" class="img_photo">
+                <div class="photoText">
+                    송현영(Song Hyun Young)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/신예나.png" alt="신예나" class="img_photo">
+                <div class="photoText">
+                    신예나(Shin Ye Na)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이길원.png" alt="이길원" class="img_photo">
+                <div class="photoText">
+                    이길원(Lee Gil Won)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이영비.png" alt="이영비" class="img_photo">
+                <div class="photoText">
+                    이영비(Lee Young Be)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/이준혁.png" alt="이준혁" class="img_photo">
+                <div class="photoText">
+                    이준혁(Lee Joon Hyuk)
+                </div></a>
+        </div>
+
+        <div class="photo_name">
+            <a href="personalpage/강지혜.html"><img src="./student_photo/홍은빈.png" alt="홍은빈" class="img_photo">
+                <div class="photoText">
+                    홍은빈(Hong Eun Bin)
+                </div></a>
+        </div>
+
+    </div>
+
+    <div class="cont_address">
+        <div class="address_woosong">
+            Copyright(c), Media Design, Woosong University, All Right Reserved ㅣ 대전광역시 동구 백룡로57번길 27 ㅣ우송대학교 테크노미디어융합학부 미디어디자인전공 ㅣ 042-630-9171
+        </div>
+    </div>
+</body>
+</html>
